@@ -1,10 +1,10 @@
-const URL_API = "http://localhost:3001";
+const URL_API = "https://68dd1f4f7cd1948060ac81e4.mockapi.io/";
 const myHeaders = new Headers({
     "Content-Type": "application/json"
 });
 const getContact = async() => {
     try {
-        const respuesta = await fetch(`${URL_API}/contacts`);
+        const respuesta = await fetch(`${URL_API}/contactos`);
 		// Si la respuesta es correcta
 		if(respuesta.status === 200){
 			const datos = await respuesta.json();
@@ -22,7 +22,7 @@ const getContact = async() => {
 }
 const postContact = async (datos) => {
     try {
-        return await fetch(`${URL_API}/contacts`, {
+        return await fetch(`${URL_API}/contactos`, {
             method: "POST",
             headers: myHeaders,
             body: JSON.stringify(datos)
@@ -34,7 +34,7 @@ const postContact = async (datos) => {
 const patchContact = async (datos,id) =>{
 
     try {
-        return await fetch(`${URL_API}/contacts/${id}`, {
+        return await fetch(`${URL_API}/contactos/${id}`, {
             method: "PATCH",
             headers: myHeaders,
             body: JSON.stringify(datos)
@@ -47,7 +47,7 @@ const patchContact = async (datos,id) =>{
 const deleteContact = async (id) =>{
 
     try {
-        return await fetch(`${URL_API}/contacts/${id}`, {
+        return await fetch(`${URL_API}/contactos/${id}`, {
             method: "DELETE",
             headers: myHeaders,
         });
