@@ -23,7 +23,19 @@ export class NavMenu extends HTMLElement{
                     <a class="nav-link" href="#" data-verocultar='["ct"]'>Citas contactos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" data-verocultar='["ct"]'>Countries</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#" data-verocultar='["ct"]'>Regions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-verocultar='["ct"]'>Sities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-verocultar='["ct"]'>Companies</a>
+                  </li>
+                    <a class="nav-link" href="#" data-verocultar='["ct"]'>Branches</a>
                   </li>
                 </ul>
               </div>
